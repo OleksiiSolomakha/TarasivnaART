@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    <li *ngFor="let page of pages">
+      <button mat-button>
+        <a 
+          [routerLink]="'/' + page.path" 
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact:true}">
+            {{ page.component.title | uppercase }}
+        </a>
+      </button> 
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,18 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav position="end">
+    <button mat-icon-button (click)="sidenav.close()">
+      <span class="material-icons">
+        close
+        </span>
+    </button>
+    <app-nav></app-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>    
+    <button mat-icon-button (click)="sidenav.open()">
+      <span class="material-icons">
+        menu
+        </span>
+    </button>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

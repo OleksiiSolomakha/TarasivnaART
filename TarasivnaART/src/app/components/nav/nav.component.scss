@@ -1,0 +1,27 @@
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: 2em;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        font-size: 2em;
+        color: #000000;
+
+      }
+      .active {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
