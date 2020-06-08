@@ -1,9 +1,9 @@
 button {
   float: right;
-  margin: 2em;
   z-index: 3;
-  position: sticky;
+  position: absolute;
   top: 2em;
+  right: 2em;
 }
 
 .material-icons {
@@ -17,9 +17,9 @@ mat-sidenav-container {
     width: 100%;
     background-color: rgba(243, 243, 245, 0.9);
   }
-  
+
   mat-sidenav-content {
-    background-color: #F3F3F5;    
+    background-color: #F3F3F5;
     overflow: hidden;
   }
 }

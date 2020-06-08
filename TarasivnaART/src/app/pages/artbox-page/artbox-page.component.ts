@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ArtboxPageComponent implements OnInit {
 
   static title = 'ArtBox';
+  public artBoxes = [];
 
   constructor() { }
 

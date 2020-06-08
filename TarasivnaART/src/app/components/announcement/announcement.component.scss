@@ -3,3 +3,31 @@
   font-size: 3em;
   text-align: center;
 }
+
+.container {
+  width: 50%;
+  margin: 1em auto;
+
+  .announcement {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+
+
+    .date {
+      font-size: 2em;
+    }
+
+    .time {
+      font-size: 1.5em;
+    }
+
+    .description {
+      text-transform: capitalize;
+      font-size: 2em;
+    }
+  }
+}

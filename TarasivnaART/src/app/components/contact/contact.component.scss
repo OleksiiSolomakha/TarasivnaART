@@ -3,3 +3,22 @@
   font-size: 3em;
   text-align: center;
 }
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    margin: 2em 0;
+
+    a {
+      text-decoration: none;
+      font-family: 'Poiret One', cursive;
+      font-size: .7em;
+      color: #000;
+    }
+  }
+}

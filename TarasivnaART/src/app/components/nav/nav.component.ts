@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { routes } from 'src/app/app-routing.module';
-import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -9,11 +8,11 @@ import { Routes } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  public pages = routes;
+  public pages: any[] = routes;
 
   constructor() {
     console.log(this.pages);
-   }
+  }
 
   ngOnInit() {
   }

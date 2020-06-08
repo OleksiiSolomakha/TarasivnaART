@@ -1,1 +1,8 @@
-  <div class="header">Анонси</div>
+<div class="header">Анонси</div>
+<div class="container">
+  <div *ngFor='let announcement of announcements' class="announcement">
+    <div class="date">{{ announcement.date }}</div>
+    <div class="time">{{ announcement.time }}</div>
+    <div class="description">{{ announcement.description }}</div>
+  </div>
+</div>

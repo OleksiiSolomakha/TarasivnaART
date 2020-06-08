@@ -8,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class FaqPageComponent implements OnInit {
 
   static title = 'Популярні Запитання';
+  public config: any;
+  public fullpageApi: any;
 
   constructor() { }
 
   ngOnInit() {
+    this.config = { licenseKey: 'YOUR LICENSE KEY HERE' };
+  }
+
+  public getRef(fullPageRef) {
+    this.fullpageApi = fullPageRef;
   }
 
 }

@@ -1,1 +1,8 @@
 <div class="header">Майстеркласи</div>
+<div class="container">
+  <div *ngFor="let masterClass of masterClasses" class="master-class"
+    [ngStyle]="{'background': 'url('+ masterClass.background + ') no-repeat center center/cover'}"
+    (click)="onClick(masterClass)">
+    <div class="title">{{ masterClass.title }}</div>
+  </div>
+</div>

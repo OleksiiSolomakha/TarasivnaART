@@ -1,4 +1,15 @@
 <app-functional>
   <div class="header">Галерея</div>
-
+  <div fullpage id="fullpage" (ref)="getRef($event)" #fullpageRef>
+    <div *ngFor="let item of items" class="section">
+      <div class="picture">
+        <img [src]="item.url" [alt]="item.title">
+        <div class="description">
+          <div> {{ item.size }}</div>
+          <div class="title"> {{ item.title }}</div>
+          <div> &#8372;{{ item.price }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </app-functional>

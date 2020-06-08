@@ -4,7 +4,6 @@ nav {
   justify-content: center;
   align-items: center;
 
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -13,14 +12,20 @@ nav {
       margin: 2em;
       text-align: center;
 
-      a {
-        text-decoration: none;
-        font-size: 2em;
-        color: #000000;
+      button {
+        font-family: 'Amatic SC', cursive;
 
-      }
-      .active {
-        text-decoration: line-through;
+        a {
+          text-decoration: none;
+          font-size: 3em;
+          color: #000000;
+          font-weight: 700;
+  
+        }
+
+        .active {
+          text-decoration: line-through;
+        }
       }
     }
   }

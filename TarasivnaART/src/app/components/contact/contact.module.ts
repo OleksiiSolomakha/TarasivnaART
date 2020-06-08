@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/material/material.module';
 import { ContactComponent } from './contact.component';
+import { FooterModule } from '../footer/footer.module';
 
 
 
@@ -17,6 +18,7 @@ import { ContactComponent } from './contact.component';
     CommonModule,
     MaterialModule,
     FunctionalModule,
+    FooterModule,
   ]
 })
 export class ContactModule { }

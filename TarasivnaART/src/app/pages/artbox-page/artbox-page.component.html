@@ -1,4 +1,9 @@
 <app-functional>
   <div class="header">ArtBox</div>
-
+  <div class="container">
+    <div *ngFor='let artBox of artBoxes' class="artBox"
+      [ngStyle]="{'background': 'url('+ artBox.background + ') no-repeat center center/cover'}">
+      <div class="title">{{ artBox.title }}</div>
+    </div>
+  </div>
 </app-functional>

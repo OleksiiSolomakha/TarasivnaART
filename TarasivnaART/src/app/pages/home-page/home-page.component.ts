@@ -14,12 +14,11 @@ export class HomePageComponent implements OnInit {
 
   constructor() {
 
-    this.config = {
-      licenseKey: 'YOUR LICENSE KEY HERE',
-    };
   }
 
   ngOnInit() {
+    this.config = { licenseKey: 'YOUR LICENSE KEY HERE' };
+
   }
 
   public getRef(fullPageRef) {
